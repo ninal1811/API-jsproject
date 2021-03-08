@@ -9,7 +9,7 @@ $.ajax({
 var theirName = prompt("What is your name?")
 for (var i = 1; i < theirName; i++) {
     if (theirName == "nm"){
-        document.write("There are other people with that name!") // ignore for now
+        document.write("There are other people with that name!") // ignore for now pls and ty
     }
 
 var i = 0
