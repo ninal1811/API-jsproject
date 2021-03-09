@@ -10,14 +10,14 @@ var theirName = prompt("What is your name?")
 for (var i = 1; i < theirName; i++) {
     if (theirName == "nm"){
         document.write("There are other people with that name!") // ignore for now pls and ty
-    }
-
-var i = 0
-for (let i in "nm") {
-   console.log(i + theirName[i])
 }
-
-document.write("Hi");
-// data set/api: https://data.cityofnewyork.us/resource/25th-nujf.json
-// search enginge: find out if your name is popular
-// for some reason..only females?
+            
+var i = 0
+    for (let i in "nm") {
+          console.log(i + theirName[i])
+    }
+}
+ 
+ // data set/api: https://data.cityofnewyork.us/resource/25th-nujf.json
+ // search enginge: find out if your name is popular
+ // for some reason..only females?
