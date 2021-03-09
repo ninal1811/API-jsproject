@@ -19,7 +19,13 @@ var i = 0
 }
  
  
- document.write("Hi guys! please tell me this work bc if it doesnt omg")
+//Extension: 
+//var babyname = prompt("Are you having a female baby and you need a name idea?") 
+    
+
+
+
+
  // data set/api: https://data.cityofnewyork.us/resource/25th-nujf.json
  // search enginge: find out if your name is popular
  // for some reason..only females?
