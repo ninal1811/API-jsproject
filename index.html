@@ -26,29 +26,32 @@
             url: 'https://data.cityofnewyork.us/resource/25th-nujf.json',
             dataType: 'json',
             success: function(data) {
+                var theirName = prompt("What is your name?")
+                    for (var i=0; i<theirName.length; i++){
+                        if (theirName == data[i].nm ){
+                        console.log(data[i].cnt + " other people have your name! (In New York City)")
+                    }
+            }
             }
             });
-        var api = "https://data.cityofnewyork.us/resource/25th-nujf.json"
-        var theirName = prompt("What is your name?")
-            async function getData (){
-                const response2 = await fetch(api);
-                var data = await response2.json();
-                document.write("<h1> Find out how many people have the same name as you! </h1>");
-                for (var i = 1; i < theirName; i++) {
-                    if (theirName = "nm"){
-                        theirName[i]
-                        document.write("There are other people with that name!")
-                        document.write(theirName + data.nm); // ignore for now pls and ty
-                }
-            }
-            getData();
+                // async function getData (){
+                //     const response2 = await fetch(api);
+                //     var data = await response2.json();
+                //     document.write("<h1> Find out how many people have the same name as you! </h1>");
+                //     for (var i = 1; i < theirName; i++) {
+                //         if (theirName = "nm"){
+                //             theirName[i]
+                //             document.write("There are other people with that name!")
+                //             document.write(theirName + data.nm); // ignore for now pls and ty
+                //     }
+                // }
+                // getData();
             
             
         
         // data set/api: https://data.cityofnewyork.us/resource/25th-nujf.json
         // search enginge: find out if your name is popular
         // for some reason..only females?
-
         </script>
     </body>
 </html>
