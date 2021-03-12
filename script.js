@@ -22,7 +22,7 @@ $.ajax({
                 for (var i = 0; i < data.length; i++){
                     var allNames = [data[i].nm + " " ];
                 }
-                // Randomly generates a name from the listed API due to the input of "Yes" from the user. 
+                // Randomly generates a name from the listed API due to the input of a number" from the user. 
                 var oneName = data[Math.floor(Math.random() * userNum)];
                 console.log(oneName);
                 document.write("<br>" + oneName.nm + " is your recommended name!");
