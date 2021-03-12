@@ -27,10 +27,9 @@ $.ajax({
             alert("Please write 'yes' or 'no' for the following question.");//Specification on answers in the loop.
             var userAnswer = prompt("Are you having a female baby and you need a name idea?");
             if (userAnswer == 'yes'){
-                for (var i = 0; data.length; i++){
-                document.write(data.cnt);   
+                for (var i = 0; i < data.length; i++){
+                    document.write(data[i].nm[Math.floor(Math.random())]);
                 }
-                
             }
         }
         extension();
