@@ -1,6 +1,6 @@
 $.ajax({
     url: 'https://data.cityofnewyork.us/resource/25th-nujf.json',
-    dataType: 'json',//Takes the user input of their (female name) and starts to go through the API finding the same name and its ranking of how many people have the same name on the API
+    dataType: 'json',//Takes the user input of their (female name) and starts to go through the API finding the same name and it's amount of how many people have the same name as the user on the API
     success: function(data) {
         function everything(){
             var theirName = prompt("What is your name?");
@@ -13,7 +13,7 @@ $.ajax({
             document.write(math + " other people have your name! (In New York City)");
         }
         everything();
-            //Asks user if they want a female baby name suggestion. Takes user input of yes or no and applies it 
+            //Asks user if they want a female baby name suggestion. Takes user input of yes or no and applies it.
         function extension(){
             alert("Please write 'yes' or 'no' for the following question.");//Specification on answers in the loop.
             var userAnswer = prompt("Are you having a female baby and you need a name idea?");
