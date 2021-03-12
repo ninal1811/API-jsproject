@@ -4,7 +4,7 @@ $.ajax({
     success: function(data) {
         // "Everything" prints out how many other females have the same name as the user input in New York City.
         function everything(){
-            var theirName = prompt("What is your name?");
+            var theirName = prompt("What is your name? (Female Names Only)");
             for (var i = 0; i < 1000; i++){
                 if (theirName == data[i].nm){
                     var count = data[i].cnt;
