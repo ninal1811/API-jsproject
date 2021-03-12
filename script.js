@@ -9,25 +9,34 @@ $.ajax({
                 var count = data[i].cnt;
             }
         }
-        var math = parseInt(count)
-        document.write(math + " other people have your name! (In New York City)")
+        var math = parseInt(count);
+        document.write(math + " other people have your name! (In New York City)");
         }
         everything();
         function extension(){
             alert("Please write 'yes' or 'no' for the following question.");//Specification on answers in the loop.
             var userAnswer = prompt("Are you having a female baby and you need a name idea?");
             if (userAnswer == 'yes'){
+                var userNum = prompt("Pick a number from 1 to 1000:");
                 for (var i = 0; i < data.length; i++){
-                var allNames = [data[i].nm + " " ]
-                //     var oneName = allNames[Math.floor(Math.random(allNames))];
-                // console.log(allNames)
-                //     console.log(oneName);
-                document.write(allNames)
+                    var allNames = [data[i].nm + " " ];
+                }
                 // }
                 // FAILED EXTENSION FOR 4 HOURS! ^
-                var namesArray = [""]
-                }
+                //var namesArray = [""]
+                var oneName = data[Math.floor(Math.random() * userNum)];
+                console.log(oneName);
+                document.write("<br>" + oneName.nm + " is your recommended name!");
             }
+            //var oneName = data[Math.floor(Math.random() * userNum)];
+            //console.log(oneName);
+            //document.write("<br>" + oneName.nm + " is your recommended name!");
+            //document.write(data[Math.floor(Math.random() * userNum)]);
+            
+            //var oneName = allNames[Math.floor(Math.random() * allNames.length)];
+                // console.log(allNames)
+                //     console.log(oneName);
+                //document.write(oneName);
         }
         extension();
     }
