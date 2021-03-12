@@ -2,35 +2,19 @@ $.ajax({
     url: 'https://data.cityofnewyork.us/resource/25th-nujf.json',
     dataType: 'json',
     success: function(data) {
-        var theirName = prompt("What is your name?")
-        for (var i=0; i<theirName.length; i++){
-            if (theirName == data[i].nm ){
-            console.log(data[i].cnt + " other people have your name! (In New York City)")
+        var theirName = prompt("What is your name?");
+        for (var i = 0; i < 1000; i++){
+            if (theirName == data[i].nm){
+                var count = data[i].cnt;
+                console.log(count);
             }
         }
+        var math = parseInt(count);
+        document.write(math + " other people have your name! (In New York City)");
     }
 });
 
-// $.ajax({
-//     url: 'https://data.cityofnewyork.us/resource/25th-nujf.json',
-//     dataType: 'json',
-//     success: function(data) {
-//         console.log(data);
-//     }
-// });
-// // Later: HTML/CSS introduce topic
-// var theirName = prompt("What is your name?")
-// for (var i = 1; i < theirName; i++) {
-//     if (theirName == "nm"){
-//         document.write("There are other people with that name!") // ignore for now pls and ty
-// }
-            
-// var i = 0
-//     for (let i in "nm") {
-//           console.log(i + theirName[i])
-//     }
-// }
- 
+
  
 //Extension: 
 //var babyname = prompt("Are you having a female baby and you need a name idea?") 
