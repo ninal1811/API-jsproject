@@ -4,6 +4,7 @@ $.ajax({
     success: function(data) {
         // "Everything" prints out how many other females have the same name as the user input in New York City.
         function everything(){
+            document.write("<h2> Name Popularity and Recommendation <br> <br>");
             var theirName = prompt("What is your name? (Female Names Only)");
             for (var i = 0; i < 1000; i++){
                 if (theirName == data[i].nm){
@@ -11,7 +12,8 @@ $.ajax({
                 }
             }
             var math = parseInt(count);
-            document.write(math + " other people have your name! (In New York City)"); // Concatenation 
+            document.write("There are ");
+            document.write(math + " other people with the name " + theirName +"! (In New York City)"); // Concatenation 
         }
         everything();
         
@@ -31,6 +33,8 @@ $.ajax({
                 var oneName = data[Math.floor(Math.random() * userNum)];
                 console.log(oneName);
                 document.write("<br>" + oneName.nm + " is your recommended name!"); // Concatenation
+            } else {
+                document.write("<br> A name recommendation was not wanted.");
             }
         }
         extension();
